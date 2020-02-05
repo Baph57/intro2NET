@@ -287,13 +287,13 @@
           "lib/netcoreapp3.1/Microsoft.Extensions.Primitives.dll": {}
         }
       },
-      "Mono.CSharp/4.0.0.143": {
+      "Mono.CSharp/3.0.6": {
         "type": "package",
         "compile": {
-          "lib/4.5/Mono.CSharp.dll": {}
+          "Lib/net40/Mono.CSharp.dll": {}
         },
         "runtime": {
-          "lib/4.5/Mono.CSharp.dll": {}
+          "Lib/net40/Mono.CSharp.dll": {}
         }
       },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
@@ -894,15 +894,15 @@
         "microsoft.extensions.primitives.nuspec"
       ]
     },
-    "Mono.CSharp/4.0.0.143": {
-      "sha512": "CprGSaPdT9Xy4Xy7nO2KxrhmfcU16gcCXzZ1ceJt0XsRcW992sYoXlvqxm8Q+QFS4D40xkfPQkurF0cC0s9A5Q==",
+    "Mono.CSharp/3.0.6": {
+      "sha512": "spKlQRTpYzHXFetCUTU6j+Ztg3ErBqJMp25BJ2+ciwzGUGxT7tTzd2u1jUMcxeiUHeLKgaQ08+KP/Jbi9covHw==",
       "type": "package",
-      "path": "mono.csharp/4.0.0.143",
+      "path": "mono.csharp/3.0.6",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/4.5/Mono.CSharp.dll",
-        "mono.csharp.4.0.0.143.nupkg.sha512",
+        "Lib/net40/Mono.CSharp.dll",
+        "mono.csharp.3.0.6.nupkg.sha512",
         "mono.csharp.nuspec"
       ]
     },
@@ -1179,7 +1179,7 @@
       "outputPath": "/Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/GregCV/.nuget/NuGet/NuGet.Config"
+        "/Users/GregCV/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -1244,10 +1244,20 @@
   },
   "logs": [
     {
+      "code": "NU1604",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Project dependency Mono.CSharp does not contain an inclusive lower bound. Include a lower bound in the dependency version to ensure consistent restore results.",
+      "libraryId": "Mono.CSharp",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    },
+    {
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'Mono.CSharp 4.0.0.143' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
+      "message": "Package 'Mono.CSharp 3.0.6' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "Mono.CSharp",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"
