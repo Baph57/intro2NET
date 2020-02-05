@@ -1,21 +1,21 @@
 ﻿<Properties StartupConfiguration="{FE2C4A09-95B0-40D3-B970-08420F303D67}|Default">
   <MonoDevelop.Ide.ItemProperties.intro2NET.API PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/ValuesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Startup.cs">
     <Files>
-      <File FileName="Controllers/ValuesController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/ValuesController.cs" Line="34" Column="10" />
+      <File FileName="Startup.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="intro2NET.API" expanded="True">
             <Node name="intro2NET.API" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="ValuesController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
               <Node name="appsettings.json" expanded="True" />
+              <Node name="Startup.cs" selected="True" />
             </Node>
           </Node>
         </State>

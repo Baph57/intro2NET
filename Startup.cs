@@ -29,6 +29,7 @@ namespace intro2NET.API
         {
             services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
             services.AddControllers();
+            services.AddCors(); //TODO: remove
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -42,6 +43,9 @@ namespace intro2NET.API
             //app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            //TODO: remove
+            app.UseCors(x => x.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseAuthorization();
 

@@ -23,7 +23,7 @@ namespace DatingApp.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetData()
         {
-            var values = await _dataContext.Values.ToListAsync();
+            List<intro2NET.API.Models.Value> values = await _dataContext.Values.ToListAsync();
 
             return Ok(values);
         }
