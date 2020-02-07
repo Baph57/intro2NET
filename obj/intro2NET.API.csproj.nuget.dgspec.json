@@ -14,7 +14,7 @@
         "outputPath": "/Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/GregCV/.nuget/NuGet/NuGet.Config"
+          "/Users/GregCV/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
