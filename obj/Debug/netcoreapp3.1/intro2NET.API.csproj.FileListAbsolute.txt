@@ -55,3 +55,11 @@
 /Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/obj/Debug/netcoreapp3.1/intro2NET.API.csproj.CopyComplete
 /Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/obj/Debug/netcoreapp3.1/intro2NET.API.dll
 /Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/obj/Debug/netcoreapp3.1/intro2NET.API.pdb
+/Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Users/GregCV/Documents/Coding/dotNETandAngular/intro2NET.API/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

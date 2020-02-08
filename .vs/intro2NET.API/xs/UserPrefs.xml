@@ -1,30 +1,28 @@
 ﻿<Properties StartupConfiguration="{FE2C4A09-95B0-40D3-B970-08420F303D67}|Default">
   <MonoDevelop.Ide.ItemProperties.intro2NET.API PreferredExecutionTarget="/Applications/Firefox.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/AuthController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="appsettings.Development.json">
     <Files>
-      <File FileName="Controllers/ValuesController.cs" Line="11" Column="1" />
-      <File FileName="Startup.cs" />
-      <File FileName="Models/User.cs" />
-      <File FileName="Data/DataContext.cs" />
-      <File FileName="Data/AuthRepository.cs" />
-      <File FileName="Controllers/AuthController.cs" Line="35" Column="15" />
-      <File FileName="DTOs/User2Register.cs" />
+      <File FileName="DTOs/User2Register.cs" Line="11" Column="12" />
+      <File FileName="Controllers/AuthController.cs" Line="63" Column="123" />
+      <File FileName="DTOs/User2LoginDTO.cs" Line="8" Column="43" />
+      <File FileName="appsettings.json" Line="1" Column="1" />
+      <File FileName="appsettings.Development.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="intro2NET.API" expanded="True">
             <Node name="intro2NET.API" expanded="True">
-              <Node name="Controllers" expanded="True">
-                <Node name="AuthController.cs" selected="True" />
-              </Node>
+              <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="DTOs" expanded="True" />
               <Node name="Migrations" expanded="True">
                 <Node name="20200205221856_AddedUserEntity.cs" expanded="True" />
               </Node>
               <Node name="Models" expanded="True" />
-              <Node name="appsettings.json" expanded="True" />
+              <Node name="appsettings.json" expanded="True">
+                <Node name="appsettings.Development.json" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>

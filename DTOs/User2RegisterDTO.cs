@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace intro2NET.API.DTOs
 {
-    public class User2Register
+    public class User2RegisterDTO
     {
         [Required]
         public string Username { get; set; }
