@@ -34,7 +34,7 @@ namespace intro2NET.API.Controllers
 
             if(await _repository.UserExistsCheck(user2RegisterDTO.Username))
             {
-                return BadRequest("user2RegisterDTO Already Exists!");
+                return BadRequest("Username Already Exists!");
             }
 
             User userToBeCreated = new User

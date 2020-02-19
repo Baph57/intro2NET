@@ -19,8 +19,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Controllers\EmptyClass.cs" />
+    <Compile Remove="Helpers\EmptyClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DTOs\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
 </Project>

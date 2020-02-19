@@ -1,20 +1,24 @@
 using System;
-using System.Collections.Generic;
+using System.Text;
+using System.Net;
 using System.Linq;
-using System.Threading.Tasks;
 using intro2NET.API.Data;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
-using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Diagnostics;
+using Microsoft.AspNetCore.Http;
+using intro2NET.API.Helpers;
 
 namespace intro2NET.API
 {
@@ -59,7 +63,25 @@ namespace intro2NET.API
             {
                 app.UseDeveloperExceptionPage();
             }
+            else
+            {
+                //production global exception handler
+                app.UseExceptionHandler(builder => {
+                    builder.Run(async context => { 
+                        context.Response.StatusCode = (int)HttpStatusCode.InternalServerError;
 
+                        IExceptionHandlerFeature error = context.Features.Get<IExceptionHandlerFeature>();
+                        if(error != null)
+                        {
+                            //helper function that will by-pass CORS to allow seeing full errors
+                            context.Response.AddApplicationError(error.Error.Message);
+
+                            //write error into http response as well
+                            await context.Response.WriteAsync(error.Error.Message);
+                        }
+                    });
+                });
+            }
             //app.UseHttpsRedirection();
 
             app.UseRouting();
